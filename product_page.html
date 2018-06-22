@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Page</title>
+        <meta name='description' content='This is the page layout for a specific product'>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='eCommerceCSS.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type='text/javascript' src='eCommerceJS.js'></script>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <a href='eCommerce.html'><img class='logo' src='images/temp_logo.png' alt='Temporary douchey logo'></a>
+                <p class='companyName'>Gotta Grow Supplements</p>
+                <div class='headerRight'>
+                    <a href='cart.html' class='cart'>Shopping Cart: (<span id='num_items'>0</span>)</a>
+                    <p class='login_info'><a href='loginPage.html'>Sign-in</a></p>
+                </div>
+            </div>
+
+            <div class='dropbar' toggled='no'>
+                <img src='images/dashes.png' alt='dropbar link' alt-img='images/dashes_black.png'>
+                <div class='dropbar_links'>
+                    <a href='protein_main.html'>Protein</a>
+                    <a href='preworkout_main.html'>Pre-Workout</a>
+                    <a href='fatburners_main.html'>Fat Burners</a>
+                    <a href='intraworkout_main.html'>Intra-Workout</a>
+                    <a class='red' href='sale_main.html'>SALE</a>
+                </div>
+            </div>
+            <div class='searchbar'>
+                <div>
+                    <input type='text' placeholder="Search">
+                    <a href='#'>GO</a>
+                </div>
+            </div>
+            <div class='navbar'><a href='protein_main.html'>Protein</a><a href='preworkout_main.html'>Pre-Workout</a><a href='fatburners_main.html'>Fat Burners</a><a href='intraworkout_main.html'>Intra-Workout</a><a class='red' href='sale_main.html'>SALE</a></div>
+        
+
+            <div class='pictureFrame'>
+                <img class='product_mainPic' src='images/bodybuilding/on_protein.jpg' alt='Optimum Nutrition Gold Standard Whey'>
+            </div>
+            <div class='productInfo_main'>
+                <p class='thisProductName'>Optimum Nutrition Gold Standard Whey</p>
+                <p class='rating'>Rating: <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span> </p>
+                <p class='price'>$34.99</p>
+            </div>
+
+            <div class='flavors'>
+                <p class='flavors_title'>Flavor: </p>
+                <div class='flavor'>
+                    <p>Chocolate</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+                <div class='flavor'>
+                    <p>Vanilla</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+                <div class='flavor'>
+                    <p>Extra Milk Chocolate</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+                <div class='flavor'>
+                    <p>Cookies and Cream</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+                <div class='flavor'>
+                    <p>Strawberry</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+                <div class='flavor'>
+                    <p>Mintberry Crunch</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+                <div class='flavor'>
+                    <p>Flavorblast Explosion</p>
+                    <a href='#'><img src='images/shopping_cart.png' alt='Shopping cart image'></a>
+                </div>
+            </div>
+
+            <div class='flavors_dropbar'>
+                <form>
+                    <p>Select Flavor:</p>
+                    <select name='flavor_order'>
+                        <option value='chocolate'>Chocolate</option>
+                        <option value='vanilla'>Vanilla</option>
+                        <option value='chocolate'>Extra Milk Chocolate</option>
+                        <option value='chocolate'>Cookies and Cream</option>
+                        <option value='chocolate'>Strawberry</option>
+                        <option value='chocolate'>Mintberry Crunch</option>
+                        <option value='chocolate'>Flavorblast Explosion</option>
+                    </select>
+
+                    <a href='#'>Add to Order</a>
+                </form>
+            </div>
+
+            <div class='product_description'>
+                <p>
+                        <span class='title'>OPTIMUM TRUE STRENGTH</span>
+                        True Strength is a journey. It never rests, it never quits. It's about overcoming obstacles, accomplishing goals, and recognizing achievements. And then it resets to achieve again. As your trusted sports nutrition partner in goal achievement, ON demonstrates that same passion while crafting our products. From the raw materials we source to our state-of-the-art manufacturing processes, no compromises are made. You set the bar higher after every workout, we set the bar higher to redefine the industry standards and ensure you realize optimum results.
+                        <br>
+                        <span class='title'>QUALITY</span>
+                        Whey protein isolates are the purest form of whey and the main ingredient in Gold Standard 100% Whey™. Each serving provides 24 grams of rapidly digesting whey protein with low levels of fat, cholesterol, lactose and other stuff you can do without making Gold Standard 100% Whey™ the standard all other proteins are measured against.
+                        <br>
+                        <span class='title'>CONSISTENCY</span>
+                        Optimum Nutrition has been spotting the efforts of goal driven individuals since 1986. As one of the few companies to operate state-of-the-art manufacturing facilities that are GMP compliant, ON assures that every shake will mix up effortlessly because of its first-to-market instantization process. You also expect each shake to taste the same as the last and your next. That's the kind of consistency ON delivers.
+                        <br>
+                        <span class='title'>HISTORY & HERITAGE</span>
+                        Optimum Nutrition is legendary for both quality and innovation. In addition to producing the world's best-selling whey protein, ON's Gold Standard 100% Casein™ introduced slow-digesting nighttime protein to the weight training world and Amino Energy created the anytime energy category in sports nutrition. When technology makes advancements possible, ON will be the company bringing it first to your shaker cup.
+                </p>
+            </div>
+
+            <div class='nutrition_label'>
+                <form>
+                    <p>NUTRITION FACTS: </p>
+                    <select name='flavor_order'>
+                        <option value='chocolate'>Chocolate</option>
+                        <option value='vanilla'>Vanilla</option>
+                        <option value='chocolate'>Extra Milk Chocolate</option>
+                        <option value='chocolate'>Cookies and Cream</option>
+                        <option value='chocolate'>Strawberry</option>
+                        <option value='chocolate'>Mintberry Crunch</option>
+                        <option value='chocolate'>Flavorblast Explosion</option>
+                    </select>
+                </form>
+
+                <img src='images/bodybuilding/ONProtein_labelFull.png' alt='Nutrition Label for Optimum Nutrition Gold Standard Whey'>
+            </div>
+        
+            <div class='footer footerProduct'>
+                <p>Questions or concerns? Contact us at</p>
+                <p>(650) 198-8492</p>
+                <p>Follow us on social media</p>
+                <a href='https://twitter.com/ashwin_m2'><img src='images/twitter.png' alt='Twitter logo' hoverImg='images/twitter_alt.png'></a>
+                <a href='https://facebook.com'><img src='images/facebook.png' alt='Facebook logo' hoverImg='images/facebook_alt.png'></a>
+                <a href='https://instagram.com/ashwin.mahesh'><img src='images/instagram.png' alt='Instagram logo' hoverImg='images/instagram_alt.png'></a>
+            </div>
+        </div>
+    </body>
+</html>

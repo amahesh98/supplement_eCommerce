@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Order Info</title>
+        <link rel='stylesheet' type='text/css' href='adminCSS.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type='text/javascript' src='eCommerceJS.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src='adminJS.js' type='text/javascript'></script>
+        <script src='adminHeaderGenerator.js' type='text/javascript'></script>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='info'>
+                <p class='orderNumber'>Order No. 570187</p>
+                <p class='datePlaced'><span class='bold'>Date Placed:</span> 05/28/2018</p>
+                <p class='customerName'><span class='bold'>Customer Name: </span>Michael Choi</p>
+                <p class='bold'>Shipping Information</p>
+                <p class='shippingInfo'>1920 Zanker Rd</p>
+                <p class='shippingInfo'>San Jose, CA 94087</p>
+                <p class='shippingMethod'><span class='bold'>Shipping Method: </span>Standard</p>
+                <p class='email'><span class='bold'>Email: </span>mikechoi@codingdojo.com</p>
+                <form>
+                    <p>Order Status: </p>
+                    <select>
+                        <option value="volvo">Not Started</option>
+                        <option value="saab">Prepared for Shipment</option>
+                        <option value="mercedes">Complete</option>
+                    </select>
+                    <input type='submit' value='Confirm'>
+                </form>
+            </div>
+
+            <div class='orderItems'>
+                <table class="table">
+                    <thead>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Flavor</th>
+                        <th>Cost per Item</th>
+                        <th>Quantity</th>
+                        <th>Item Total</th>
+                        <th>Packaged</th>
+                    </thead>
+                    <tr>
+                        <td><img src='images/bodybuilding/on_protein.jpg'></td>
+                        <td>Gold Standard Whey 5 Lbs</td>
+                        <td>Optimum Nutrition</td>
+                        <td>Chocolate</td>
+                        <td>$34.99</td>
+                        <td>2</td>
+                        <td>$69.98</td>
+                        <td><input type='checkbox' value='packaged'></td>
+                    </tr>
+                    <tr>
+                        <td><img src='images/bodybuilding/on_protein.jpg'></td>
+                        <td>Gold Standard Whey 5 Lbs</td>
+                        <td>Optimum Nutrition</td>
+                        <td>Chocolate</td>
+                        <td>$34.99</td>
+                        <td>2</td>
+                        <td>$69.98</td>
+                        <td><input type='checkbox' value='packaged'></td>
+                    </tr>
+                    <tr>
+                        <td><img src='images/bodybuilding/on_protein.jpg'></td>
+                        <td>Gold Standard Whey 5 Lbs</td>
+                        <td>Optimum Nutrition</td>
+                        <td>Chocolate</td>
+                        <td>$34.99</td>
+                        <td>2</td>
+                        <td>$69.98</td>
+                        <td><input type='checkbox' value='packaged'></td>
+                    </tr>
+                    <tr>
+                        <td><img src='images/bodybuilding/on_protein.jpg'></td>
+                        <td>Gold Standard Whey 5 Lbs</td>
+                        <td>Optimum Nutrition</td>
+                        <td>Chocolate</td>
+                        <td>$34.99</td>
+                        <td>2</td>
+                        <td>$69.98</td>
+                        <td><input type='checkbox' value='packaged'></td>
+                    </tr>
+                </table>
+            </div>
+
+            <p class='orderTotal'>Order Total: $712.57</p>
+
+            <form class='notes'>
+                <p>Notes</p>
+                <textarea name='notes' rows=6 cols=90></textarea>
+                <input type='submit' value='Save'>
+            </form>
+        </div>
+    </body>
+</html>

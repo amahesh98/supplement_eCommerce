@@ -1,0 +1,1341 @@
+
+
+:root{
+    --bg_color: rgb(54, 65, 121);
+    --header_color: rgb(14, 23, 69);
+    --navbar_color:rgb(1, 3, 15);
+    --text_color:rgb(215, 219, 240);
+    --extra_color:rgb(116, 125, 172);
+    --diagonal_bg:repeating-linear-gradient(135deg,
+    var(--bg_color),
+    var(--bg_color) 10px,
+    var(--navbar_color) 10px,
+    var(--navbar_color) 20px);
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width:100%;
+    margin:0px;
+    /* background:rgb(54, 65, 121); */
+    background:var(--bg_color);
+    /* height:1000px; */
+}
+.header{
+    /* background:rgb(14, 23, 69); */
+    background:var(--header_color);
+    margin:0px;
+}
+.header .companyName{
+    display:inline-block;
+    /* font-size:5vw; */
+    /* font-weight:bold; */
+    /* color:var(--text_color); */
+    color:gold;
+    width:fit-content;
+    font-family:'Lobster', cursive, 'Times New Roman';
+    margin:auto;
+    text-align:center;
+    vertical-align:top;
+    margin-top:20px;
+}
+.headerRight{
+    float:right;
+    margin-top:15px;
+    margin-right:15px;
+}
+.cart{
+    margin:0px;
+    margin-bottom:10px;
+    display:block;
+    text-decoration:none;
+    text-align:right;
+    color:var(--text_color);
+    vertical-align:top;
+    /* float:right; */
+    
+}
+.cart:hover{
+    color:var(--extra_color);
+}
+.logo{
+    width:40%;
+    display:inline-block;
+    margin:0px;
+}
+.login_info{
+    margin:0px;
+    display:block;
+    vertical-align:top;
+    text-align:left;
+    /* float:right; */
+    /* margin-left:42%;
+    margin-top:25px; */
+}
+.login_info a{
+    /* display:inline-block; */
+    /* color:white; */
+    color:var(--text_color);
+    text-decoration:none;
+}
+.login_info a:hover{
+    /* color:rgb(0, 98, 190); */
+    color:var(--extra_color);
+}
+.searchbar{
+        /* width:100%; */
+        /* background:var(--navbar_color); */
+        background:var(--diagonal_bg);
+        /* padding-top:20px; */
+}
+.searchbar input{
+    height:14pt;
+    vertical-align: top;
+    text-align:left;
+    font-size:12pt;
+    /* margin:1%; */
+    /* margin-left:10%; */
+}
+.searchbar a{
+    /* float:right; */
+    margin:10px;
+    background:var(--navbar_color);
+    padding:10px;
+    border-radius:10px;
+    border:2px solid var(--extra_color);
+    color:var(--text_color);
+    text-decoration: none;
+    /* font-weight:bold; */
+}
+.searchbar a:hover{
+    background:var(--text_color);
+    color:var(--navbar_color);
+    border:2px solid var(--navbar_color);
+}
+
+.searchbar div{
+    /* float:right; */
+    /* margin-top:20px;
+    margin-bottom:20px; */
+}
+
+.navbar{
+    /* background:rgb(1, 3, 15); */
+    background:var(--navbar_color);
+    margin:0px;
+    margin-bottom:0px;
+    display:block;
+    width:100%;
+}
+.navbar a{
+    
+    color:var(--text_color);
+    text-decoration:none;
+    /* width:33.35%; */
+    /* width:10%; */
+    display:inline-block;
+    margin:0px;
+    /* margin:3%;
+    margin-left:8%;
+    margin-right:7%; */
+    padding:3%;
+    padding-left:8%;
+    padding-right:7%;
+    text-align:center;
+    border:2px solid transparent;
+    font-size:14pt;
+}
+.bootstrapNav a{
+
+}
+.navbar a:hover{
+    /* color:var(--navbar_color); */
+    color:maroon;
+    background:var(--text_color);
+    /* padding-top:30px; */
+}
+.dropbar{
+    background:var(--navbar_color);
+    margin:0px;
+    margin-bottom:0px;
+    display:block;
+    width:100%;
+    padding:0px;
+}
+.dropbar img{
+    width:64px;
+    padding:10px;
+}
+.dropbar img:hover{
+    background:var(--text_color);
+}
+.dropbar img:active{
+    background:var(--text_color);
+}
+.dropbar a{
+    /* TEMP VALUE DELETE this display block!!! */
+    /* display:block; */
+    /* visibility:hidden; */
+    width:100%;
+    display:none;
+    color:var(--text_color);
+    text-decoration:none;
+    margin:0px;
+    padding:30px;
+    padding-left:40px;
+    padding-right:40px;
+    text-align:center;
+    border:2px solid transparent;
+    font-size:14pt;
+    background:var(--navbar_color);
+}
+.dropbar a:hover{
+    color:var(--navbar_color);
+    background:var(--text_color);
+}
+.dropbar .current{
+    color:maroon;
+    background:goldenrod;
+}
+.navbar .current{
+    color:maroon;
+    background:goldenrod;
+}
+.dropbar_links{
+    position:absolute;
+    z-index: 5;
+}
+
+.navbar a.red{
+    background:rgb(131, 0, 0);
+    font-weight:bold;
+}
+.navbar a.red:hover{
+    background:goldenrod;
+    color:maroon;
+}
+.navbar a.red:active{
+    background:goldenrod;
+    color:maroon;
+}
+.dropbar a.red{
+    background:rgb(131, 0, 0);
+    font-weight:bold;
+}
+.dropbar a.red:hover{
+    background:goldenrod;
+    color:maroon;
+}
+.dropbar a.red:active{
+    background:goldenrod;
+    color:maroon;
+}
+.mainPic{
+    /* height:450px; */
+    width:100%;
+    /* background:url('images/main_photo.jpg'); */
+    background:url('images/bodybuilding/bodybuilder_main.jpeg');
+    /* background:url('images/bodybuilding/supplements.jpg'); */
+    background-attachment: fixed;
+    margin:0px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    /* padding-top:85%; */
+    padding-top:1%;
+    padding-bottom:8%;
+}
+.mainPic a{
+    border:2px solid white;
+    background:none;
+    color:white;
+    /* padding:20px; */
+    width:45%;
+    margin:auto;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    font-size:16pt;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+}
+.mainPic a:hover{
+    background:white;
+    border:2px solid var(--navbar_color);
+    color:var(--navbar_color);
+}
+.mainPic p{
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    font-size:25pt;
+    vertical-align:top;
+    margin-top:45px;
+    margin-bottom:330px;
+}
+.moreContent{
+    margin-top:30px;
+    height:500px;
+    margin-bottom:30px;
+}
+.moreContent a{
+    border:2px solid white;
+    background:none;
+    color:white;
+    /* padding:20px; */
+    width:45%;
+    margin:auto;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    font-size:16pt;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+}
+.moreContent a:hover{
+    background:white;
+    border:2px solid var(--navbar_color);
+    color:var(--navbar_color);
+}
+.moreContent p{
+    color:white;
+    font-size:25pt;
+    font-weight:bold;
+    text-align: center;
+    padding-top:45px;
+    width:75%;
+    margin:auto;
+    /* margin-top:30px; */
+}
+.kids{
+    /* background:url('images/main_kid.jpg'); */
+    background:url('images/bodybuilding/frankzane.jpg');
+    background-attachment: fixed;
+    /* background-attachment:scroll; */
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.kids p{
+    margin-bottom:319px;
+}
+.featured{
+    background:url('images/featured_photo.jpg');
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.featured p{
+    margin-bottom:250px;
+}
+.promotions{
+    /* background:url('images/promotions.jpg'); */
+    background:url('images/bodybuilding/curls.jpg');
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom:0px;
+}
+.promotions p{
+    margin-bottom:319px;
+}
+.footer{
+    background:var(--navbar_color);
+    color:var(--text_color);
+    text-align:center;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.footer p{
+    font-size:9pt;
+    margin:5px;
+}
+.footer img{
+    display:inline-block;
+    width:48px;
+    margin:15px;
+}
+
+@media only screen and (max-width:480px){
+    .navbar{
+        display:none;
+    }
+    .sidebar{
+        display:none;
+    }
+    .products{
+        width:100%;
+    }
+    .searchbar{
+        padding-top:20px;
+        padding-bottom:45px;
+
+    }
+    .searchbar div{
+        margin-right:5px;
+        float:right;
+        vertical-align:top;
+    }
+    .searchbar input{
+        width:71vw;
+    }
+    .header .companyName{
+        display:none;
+    }
+}
+@media only screen and (max-width:640px){
+    .header .companyName{
+        display:none;
+    }
+}
+@media only screen and (min-width:481px){
+    .logo{
+        width:22%;
+    }
+    .navbar{
+        margin:0px;
+        display:none;
+    }
+    .navbar a{
+        margin:0px;
+        width:49.1%;
+        /* width:33%; */
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:0px;
+        padding-right:0px;
+        margin-left:0%;
+        margin-right:0%;
+    }
+    .sidebar{
+        display:none;
+    }
+    .products{
+        width:100%;
+    }
+    .searchbar{
+        padding-top:20px;
+        padding-bottom:45px;
+    }
+    .searchbar div{
+        float:right;
+        vertical-align:top;
+    }
+    .searchbar input{
+        width:80vw;
+    }
+    .header .companyName{
+        font-size:28pt;
+        vertical-align:bottom;
+        margin-top:0px;
+        margin-bottom:20px;
+        margin-left:100px;
+    }
+}
+@media only screen and (max-width:850px){
+    .header .companyName{
+        font-size:26pt;
+        margin-left:0px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .logo{
+        width:17%;
+    }
+    .navbar{
+        display:block;
+    }
+    .navbar a{
+        margin:0px;
+        width:19.6%;
+        /* width:33%; */
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left:0px;
+        padding-right:0px;
+        margin-left:0%;
+        margin-right:0%;
+        /* height:10px */
+    }
+    .bootstrapNav a{
+        width:20%;
+    }
+    .headerRight{
+        font-size:13pt;
+        margin-top:25px;
+        margin-right:30px;
+    }
+    .moreContent{
+        width:33%;
+        display:inline-block;
+    }
+    .kids{
+        position:relative;
+        /* top:-4px; */
+    }
+    .moreContent{
+        margin-bottom:0px;
+        background-attachment:scroll;
+    }
+    .dropbar{
+        display:none;
+    }
+    .sidebar{
+        display:inline-block;
+    }
+    .products{
+        width:77%;
+    }
+    .searchbar{
+
+        /* display:block;
+        float:right;
+        padding-left:75%; */
+        /* padding-bottom:20px; */
+        padding:25px 10px;
+        padding-bottom:50px;
+        /* border:1px solid red; */
+    }
+    .searchbar div{
+        /* border:1px solid white; */
+        float:right;
+        vertical-align:top;
+        /* margin:30px 10px; */
+    }
+    .searchbar input{
+        width:300px;
+    }
+    .header .companyName{
+        font-size:32pt;
+        vertical-align:bottom;
+        margin-top:0px;
+        margin-bottom:10px;
+        margin-left:200px;
+    }
+
+}
+
+
+/* LOGIN PAGE STYLING */
+.loginBox{
+    background:var(--extra_color);
+    width:320px;
+    margin:auto;
+    border-radius:15px;
+    margin-top:20px;
+    padding-top:30px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+}
+.loginBox form{
+    margin-left:30px;
+}
+.loginBox form p{
+    color:var(--navbar_color);
+    font-weight:bold;
+    font-size:12pt;
+}
+.loginBox form *{
+    margin:6px;
+}
+.loginBox form input{
+    font-size:12pt;
+    width:225px;
+}
+.submitButton{
+    display:block;
+    font-size:12pt;
+    font-weight:bold;
+    padding:12px 20px;
+    background:var(--header_color);
+    border:3px solid var(--navbar_color);
+    color:var(--text_color);
+    border-radius:10px;
+}
+.loginBox form .submitButton{
+     margin-left:80px;
+     margin-top:20px;
+     margin-bottom:0px;
+}
+.submitButton:hover{
+    color:var(--header_color);
+    background:var(--text_color);
+}
+.submitButton:active{
+    color:var(--header_color);
+    background:var(--text_color);
+}
+.loginBox form .minorText{
+    margin-top:40px;
+    margin-left:-5px;
+    font-weight:normal;
+    font-size:11pt;
+}
+.loginBox form .minorText a:hover{
+    color:var(--header_color);
+    text-decoration:none;
+}
+.loginWrapper{
+    background:url('images/bodybuilding/gym_interior.png');
+    background-repeat: none;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:bottom;
+    /* OPTIONAL RECONSIDER THIS DECISION */
+}
+
+/* PROTEIN PAGE STYLING */
+.dropdown{
+    margin:10px;
+    vertical-align: top;
+    /* display:inline-block; */
+}
+.products .dropdown button{
+    padding:10px;
+    width:175px;
+    /* padding-left:40px;
+    padding-right:40px; */
+}
+.products .dropdown div a{
+    display:block;
+    color:var(--navbar_color);
+    text-decoration:none;
+    margin:10px;
+}
+.products{
+    display:inline-block;
+    margin:auto;
+    /* width:78.1%; */
+}
+.sidebar{
+    /* display:none; */
+    vertical-align:top;
+    border:1px solid black;
+    /* width:300px; */
+    width:20%;
+    height:500px;
+    background:var(--extra_color);
+    margin:10px;
+}
+.products .product{
+    display:inline-block;
+    width:165px;
+    margin:10px;
+}
+.product img{
+    width:175px;
+    height:200px;
+    border:3px solid var(--navbar_color);
+    margin-bottom:15px;
+}
+.product a{
+    text-align:center;
+    color:var(--text_color);
+    font-weight:bold;
+}
+.product p{
+    color:var(--text_color);
+    font-weight:bold;
+    margin-top:10px;
+    text-align:center;
+    font-size:12pt;
+}
+.product img:hover{
+    border:3px solid var(--extra_color);
+}
+.product a:hover{
+    color:var(--header_color);
+    text-decoration: none;
+}
+p.price a{
+    background:var(--extra_color);
+    border-right:2px solid var(--navbar_color);
+    border-bottom:2px solid var(--navbar_color);
+    border-radius:10px;
+    padding:7px 25px;
+}
+p.price a:hover{
+    background:var(--header_color);
+    color:var(--text_color);
+}
+p.price a:active{
+    background:var(--navbar_color);
+}
+.pageNumbers a{
+    color:var(--text_color);
+    font-weight:bold;
+    font-size:14pt;
+    margin:7px 5px;
+    background:var(--extra_color);
+    padding:7px;
+    border:1px solid var(--text_color);
+}
+.pageNumbers{
+    margin:auto;
+    /* width:325px; */
+    width:fit-content;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.pageNumbers a:hover{
+    color:var(--navbar_color);
+    border:1px solid var(--navbar_color);
+    text-decoration:none;
+}
+
+.pictureFrame{
+    width:fit-content;
+    /* display:inline-block; */
+    display:block;
+    /* margin:auto; */
+}
+/* INDIVIDUAL PRODUCT PAGE */
+.product_mainPic{
+    border:3px solid var(--header_color);
+    margin:auto;
+}
+.productInfo_main{
+    border:2px solid var(--text_color);
+    padding:0px 15px;
+}
+.productInfo_main p{
+    color:var(--text_color);
+    text-align:center;
+    line-height:15px;
+    /* color:white; */
+}
+.productInfo_main .thisProductName{
+    font-weight:bold;
+    font-size:13pt;
+}
+.productInfo_main .rating{
+    font-size:10pt;
+}
+.productInfo_main .price{
+    color:gold;
+}
+.productInfo_main .rating{
+    color:gold;
+}
+@media only screen and (max-width:480px){
+    .pictureFrame{
+        margin:auto;
+        margin-top:20px;
+    }
+    .product_mainPic{
+        margin-top:20px;
+        display:block;
+        width:200px;
+        height:300px;
+    }
+    .flavors{
+        display:none;
+    }
+    .productInfo_main{
+        display:block;
+        width:fit-content;
+        margin:auto;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .nutrition_label{
+        display:block;
+        width:fit-content;
+        margin:auto;
+        margin-bottom:0px;
+    }
+    .nutrition_label select{
+        /* margin-right:10px */
+    }
+    .nutrition_label p{
+        /* margin-left:10px;
+        margin-right:20px; */
+    }
+    .product_description{
+        /* margin-top:20px; */
+        padding-left:6px;
+        padding-right:6px;
+    }
+}
+@media only screen and (min-width:481px){
+    .pictureFrame{
+        display:block;
+        margin:auto;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+    .product_mainPic{
+        width:250px;
+        height:350px;
+        /* margin:30px; */
+    }
+    /* Problem is just this below */
+    .productInfo_main{
+        width:fit-content;
+        margin:auto;
+        /* padding:10px 30px; */
+    }
+
+    .productInfo_main .thisProductName{
+        font-size:14pt;
+    }
+    .productInfo_main .price{
+        font-size:13pt;
+    }
+    .flavors{
+        display:block;
+        margin:auto;
+        margin-top:30px;
+        padding-bottom:27px;
+    }
+   
+   .flavors_dropbar{
+       display:none;
+   }
+
+   .product_description{
+       border:2px solid var(--text_color);
+       padding:10px 30px;
+   }
+   .nutrition_label{
+       width:400px;
+       margin:auto;
+       margin-bottom:30px;
+       margin-top:30px;
+   }
+}
+@media only screen and (min-width:1024px){
+    .product_mainPic{
+        /* width:250px; */
+        /* height:350px; */
+        display:block;
+        width:60%;
+        margin:auto;
+        vertical-align:center;
+        margin-top:20px;
+        /* margin:50px;
+        margin-left:130px; */
+    }
+    .pictureFrame{
+        width:425px;
+        height:400px;
+        display:inline-block;
+        background:rgb(53, 53, 53);
+        margin:50px 30px;
+        margin-right:0px;
+        border:1px solid var(--navbar_color);
+        /* padding:50px 100px; */
+    }
+    .flavors_dropbar{
+        display:none;
+    }
+    .productInfo_main{
+        width:fit-content;
+        display:inline-block;
+        vertical-align:top;
+        margin-top:50px;
+        /* margin-left:7%; */
+        float:right;
+        margin-right:62px;
+        /* padding:0px; */
+    }
+    .productInfo_main .thisProductName{
+        font-size:18pt;
+    }
+    .productInfo_main .price{
+        font-size:15pt;
+    }
+    .flavors{
+        display:inline-block;
+        vertical-align:top;
+        float:right;
+        margin-right:62px;
+        margin-top:-300px;
+        padding-top:15px;
+        padding-bottom:15px;
+    }
+    .product_description{
+        border:2px solid var(--extra_color);
+        display:inline-block;
+        width:45%;
+    }
+    .product_description p{
+        margin:15px 10px;
+    }
+
+    .nutrition_label{
+        display:inline-block;
+        width:400px;
+        float:right;
+        vertical-align: top;
+        margin-top:-600px;
+        margin-right:62px;
+    }
+    .footerProduct{
+        margin-top:100px;
+    }
+}
+@media only screen and (min-width:1175px){
+    .nutrition_label{
+        margin-top:-575px;
+    }
+}
+.flavors{
+    border:2px solid var(--text_color);
+    width:fit-content;
+    background:var(--diagonal_bg);
+}
+.flavor p{
+    display:inline-block;
+    color:var(--text_color);
+    margin-right:100px;
+    vertical-align: top;
+    margin-top:25px;
+    margin-left:30px;
+}
+.flavor a img{
+    width:20px;
+    /* background:var(--navbar_color); */
+    background:maroon;
+    padding:10px;
+    border-radius:10px;
+    /* border:2px solid var(--text_color); */
+    border:2px solid gold;
+    margin-right:30px;
+    margin-top:15px;
+    float:right;
+}
+.flavor a img:hover{
+    background:var(--text_color);
+    border:2px solid maroon;
+}
+.flavor a img:active{
+    background:var(--text_color);
+    border:2px solid maroon;
+}
+.flavors .flavors_title{
+    color:var(--text_color);
+    font-weight:bold;
+    font-size:14pt;
+    margin-bottom:0px;
+    margin-left:30px;
+    text-decoration:underline;
+}
+.flavors_dropbar{
+    border:2px solid var(--text_color);
+    margin:20px 15px;
+    background:var(--diagonal_bg);
+}
+.flavors_dropbar a{
+    display:block;
+    color:var(--text_color);
+    background:maroon;
+    padding:15px;
+    width:fit-content;
+    margin:auto;
+    border-radius:10px;
+    text-decoration:none;
+    margin-top:30px;
+    margin-bottom:20px;
+    border:1px solid gold;
+}
+.flavors_dropbar a:hover{
+    border:1px solid maroon;
+    background:var(--text_color);
+    color:maroon;
+}
+.flavors_dropbar select{
+    display:block;
+    width:fit-content;
+    margin:auto;
+    font-size:14pt;
+    margin-top:20px;
+}
+.flavors_dropbar p{
+    color:var(--text_color);
+    font-weight:bold;
+    margin:auto;
+    display:block;
+    width:fit-content;
+    margin-top:20px;
+}
+.product_description{
+    margin:20px 15px;
+}
+.product_description p{
+    color:var(--text_color);
+}
+.product_description .title{
+    display:block;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight:bold;
+    font-size:13pt;
+    color:var(--text_color);
+}
+.nutrition_label{
+    border:2px solid var(--text_color);
+    background:var(--diagonal_bg);
+    /* margin:20px 15px;
+    width:fit-content; */
+}
+.nutrition_label select{
+    display:inline-block;
+    width:fit-content;
+    margin:auto;
+    font-size:12pt;
+    margin-top:20px;
+    margin-right:10px;
+}
+.nutrition_label p{
+    margin-left:10px;
+    margin-right:10px;
+    display:inline-block;
+    color:var(--text_color);
+    font-weight:bold;
+}
+.nutrition_label img{
+    width:95%;
+    display:block;
+    margin:auto;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+/* SHOPPING CART */
+.cartItems{
+    display:block;
+    margin-top:20px;
+    margin-left:20px;
+}
+.cartItems > p{
+    color:var(--text_color);
+    font-size:13pt;
+    font-weight:bold;
+}
+.cartItem{
+    display:block;
+    width:100%;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-bottom:1px solid var(--text_color);
+}
+.cartItem > a > img{
+    width:75px;
+    height:100px;
+    display:inline-block;
+}
+.cartItem > a{
+    width:75px;
+    height:100px;
+    /* display:inline-block; */
+}
+.cartItem .productInfo_cart{
+    color:var(--text_color);
+    display:inline-block;
+    vertical-align: top;
+    margin-left:20px;
+    width:70%;
+}
+.cartItem .productInfo_cart a{
+    /* color:gold; */
+    color:var(--text_color);
+    font-weight:bold;
+    font-size:13pt;
+}
+.cartItem .productInfo_cart p{
+    margin-top:10px;
+    line-height:10px;
+    color:var(--extra_color);
+    font-size:10pt;
+}
+.cartItem .productInfo_cart .remove{
+    float:right;
+    vertical-align:top;
+}
+.cartItem .productInfo_cart a:hover{
+    color:gold;
+    text-decoration: none;
+}
+.cartItem form *{
+    display:inline-block;
+}
+.cartItem form p{
+    color:var(--text_color);
+}
+.cartItem form{
+   margin-top:30px;
+   margin-bottom:15px;
+}
+.cartItem form input{
+    margin-right:30px;
+    font-size:12pt;
+    width:50px;
+}
+.bold{
+    font-weight:bold;
+}
+.itemTotal{
+    color:var(--text_color);
+    font-size:12pt;
+}
+.cartItem form .remove:hover{
+    text-decoration:none;
+    color:gold;
+}
+.order_summary{
+    background:var(--extra_color);
+    color:var(--navbar_color);
+    border:1px solid var(--text_color);
+}
+.order_summary *{
+    margin-left:30px;
+    font-size:12pt;
+    
+}
+.order_summary .title{
+    margin-top:15px;
+    margin-bottom:20px;
+    /* margin-right:30px; */
+    font-weight:bold;
+    font-size:14pt;
+    /* width:85%; */
+    margin-right:50px;
+    border-bottom:1px solid var(--navbar_color);
+    padding-bottom:15px;
+}
+.order_summary .bold{
+    font-size:13pt;
+    border-top:1px solid var(--navbar_color);
+    padding-top:15px;
+    margin-top:20px;
+    /* width:85%; */
+    margin-right:50px;
+}
+.order_summary .bold span{
+    float:right;
+}
+.order_summary .boldC{
+    font-weight:bold;
+    float:right;
+    margin-right:50px;
+}
+.order_summary a{
+    background:maroon;
+    color:var(--text_color);
+    border:1px solid gold;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:75%;
+    margin:auto;
+    display:block;
+    text-align: center;
+    font-size:13pt;
+    margin-bottom:25px;
+    margin-top:25px;
+    border-radius:8px;
+}
+.order_summary a:hover{
+    background:var(--text_color);
+    color:maroon;
+    border:1px solid maroon;
+    text-decoration:none;
+}
+
+@media only screen and (max-width:480px){   
+    .order_summary{
+        margin:15px;
+        margin-bottom:30px;
+    }
+    .cartItem form .remove{
+        display:none;
+    }
+    .cartItems{
+        margin-right:20px;
+    }
+}
+@media only screen and (min-width:481px){
+    .cartItems{
+        margin-right:50px;
+    }
+    .cartItem form .remove{
+        display:none;
+    }
+    .order_summary{
+        margin:15px;
+        margin-bottom:30px;
+    }
+}
+@media only screen and (min-width:665px) and (max-width:1023px){
+    .cartItems{
+        display:inline-block;
+        width:51%;
+        margin-right:0px;
+    }
+    .order_summary{
+        margin:0px;
+        display:inline-block;
+        width:42%;
+        vertical-align:top;
+        float:right;
+        margin-top:80px;
+        margin-right:10px;
+    }
+    .order_summary *{
+        margin-right:0px;
+    }
+
+}
+
+@media only screen and (min-width:1024px){
+    .cartItem .productInfo_cart .remove{
+        display:none;
+    }
+    .cartItems{
+        display:inline-block;
+        /* width:fit-content; */
+        margin-right:0px;
+
+        /* width:30%; */
+    }
+    .cartItem > a > img{
+        display:inline-block;
+    }
+    .cartItem form .remove{
+        display:block;
+    }
+    .cartItem .productInfo_cart{
+        display:inline-block;
+        width:fit-content;
+    }
+    .cartItems{
+        width:60%;
+    }
+    .cartItem form{
+        display:inline-block;
+        width:fit-content;
+        vertical-align: top;
+        margin-top:5px;
+        margin-left:100px;
+    }
+    .cartItem form input{
+        display:block;
+        margin-bottom:8px;
+    }
+    .cartItem form .remove{
+        vertical-align: center;
+        font-size:15pt;
+        color:var(--text_color);
+    }
+    .cartItem .itemTotal{
+        display:inline-block;
+        float:right;
+    }
+    .order_summary{
+        display:inline-block;
+        /* width:30%; */
+        vertical-align:top;
+        float:right;
+        margin:0px;
+        margin-top:80px;
+        margin-right:60px;
+    }
+    
+}
+.cartItems >a{
+    font-weight:bold;
+    color:rgb(0, 116, 248);
+}
+.cartItems >a:hover{
+    text-decoration:none;
+    color:rgb(0, 0, 85);
+}
+.cartItems >a:active{
+    text-decoration:none;
+    color:rgb(0, 0, 85);
+}
+*{
+    /* outline:1px solid red; */
+}
+/* Login page creating the signup popup */
+.signupWrapper{
+    display:none;
+    position:absolute;
+    /* display:block; */
+    background:rgba(0, 0, 0, 0.884);
+    border:1px solid black;
+    /* width:300px; */
+    width:100%;
+    top:0px;
+    height:772px;
+}
+.signupWrapper form{
+    margin-top:30px;
+    margin-left:30px;
+    color:var(--navbar_color);
+    background:var(--extra_color);
+    width:300px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+    border:3px solid var(--text_color);
+    margin-top:150px;
+}
+.signupWrapper form *{
+    margin:0px;
+    margin-left:40px;
+}
+.signupWrapper form .thisSubmit{
+    margin-top:25px;
+    margin-bottom:25px;
+    background:var(--header_color);
+    border:1px solid var(--text_color);
+    color:var(--text_color);
+    border-radius:5px;
+    font-size:13pt;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.signupWrapper form .thisSubmit:hover{
+    background:var(--text_color);
+    border:1px solid var(--header_color);
+    color:var(--header_color);
+}
+.signupWrapper form .thisSubmit:active{
+    background:rgb(138, 138, 138);
+}
+.signupWrapper form input{
+    display:block;
+    color:black;
+    width:200px;
+    font-size:12pt;
+    /* margin:auto; */
+}
+.signupWrapper form p{
+    line-height:20px;
+    color:var(--text_color);
+    /* color:var(--navbar_color); */
+}
+.signupWrapper .signupTitle{
+    font-weight:bold;
+    font-size:14pt;
+    margin-top:20px;
+    margin-bottom:15px;
+    display:inline-block;
+}
+.signupWrapper form .signupClose{
+    display:inline-block;
+    float:right;
+    margin-top:20px;
+    margin-right:20px;
+    color:var(--text_color);
+    font-weight:bold;
+    font-size:14pt;
+    text-decoration: none;
+}

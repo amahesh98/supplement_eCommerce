@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>eCommerce Login</title>
+        <meta name='description' content='Log in to your account here'>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='eCommerceCSS.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type='text/javascript' src='eCommerceJS.js'></script>
+    </head>
+    <body>
+        <div class='wrapper loginWrapper'>
+            <div class='header'>
+                <a href='eCommerce.html'><img class='logo' src='images/temp_logo.png' alt='Temporary douchey logo'></a>
+                <p class='companyName'>Gotta Grow Supplements</p>
+                <div class='headerRight'>
+                    <a href='cart.html' class='cart'>Shopping Cart: (<span id='num_items'>0</span>)</a>
+                    <p class='login_info'><a href='loginPage.html'>Sign-in</a></p>
+                </div>
+            </div>
+
+            <div class='dropbar' toggled='no'>
+                <img src='images/dashes.png' alt='dropbar link' alt-img='images/dashes_black.png'>
+                <div class='dropbar_links'>
+                    <a href='protein_main.html'>Protein</a>
+                    <a href='preworkout_main.html'>Pre-Workout</a>
+                    <a href='fatburners_main.html'>Fat Burners</a>
+                    <a href='intraworkout_main.html'>Intra-Workout</a>
+                    <a class='red' href='sale_main.html'>SALE</a>
+                </div>
+            </div>
+            <div class='searchbar'>
+                <div>
+                    <input type='text' placeholder="Search">
+                    <a href='#'>GO</a>
+                </div>
+            </div>
+            <div class='navbar'><a href='protein_main.html'>Protein</a><a href='preworkout_main.html'>Pre-Workout</a><a href='fatburners_main.html'>Fat Burners</a><a href='intraworkout_main.html'>Intra-Workout</a><a class='red' href='sale_main.html'>SALE</a></div>
+            
+            <div class='loginBox'>
+                <form>
+                    <p>Email:</p>
+                    <input type='email' placeholder="email" name='email'><br>
+                    <p>Password:</p>
+                    <input type='password' placeholder='password' name='password'><br>
+                    <button type='button' value='Log In' class='submitButton'>Log In</button>
+                    
+                    <p class='minorText'>Don't have an account yet? <a href='#'>Sign up now!</a></p>
+                </form>
+            </div>
+
+            <div class='footer'>
+                <p>Questions or concerns? Contact us at</p>
+                <p>(650) 198-8492</p>
+                <p>Follow us on social media</p>
+                <a href='https://twitter.com/ashwin_m2'><img src='images/twitter.png' alt='Twitter logo' hoverImg='images/twitter_alt.png'></a>
+                <a href='https://facebook.com'><img src='images/facebook.png' alt='Facebook logo' hoverImg='images/facebook_alt.png'></a>
+                <a href='https://instagram.com/ashwin.mahesh'><img src='images/instagram.png' alt='Instagram logo' hoverImg='images/instagram_alt.png'></a>
+            </div>
+        </div>
+
+        <div class='signupWrapper'>
+            <form>
+                <p class='signupTitle'>Sign up</p>
+                <a href='#' class='signupClose'>&#10005;</a>
+                <p>First Name:</p> <input type='text' name='firstName'>
+                <p>Last Name:</p> <input type='text' name='lastName'>
+                <p>Email:</p> <input type='email' name='email'>
+                <p>Confirm Email:</p> <input type='email' name='emailConfirm'>
+                <p>Password:</p> <input type='password' id='password'name='password'>
+                <p>Confirm Password:</p> <input type='password' id='passwordConfirm' name='passwordConfirm'>
+                <p>Display Password:</p> <input type="checkbox" id='displayPassword' name="displayPassword" value="yes" onclick='showPassword()'>
+                <p>Date of Birth:</p><input type='date' name='birthday'>
+                <input class='thisSubmit' type='submit' value='Submit'>
+            </form>
+        </div>
+        
+    </body>
+</html>

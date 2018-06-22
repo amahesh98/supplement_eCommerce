@@ -1,0 +1,69 @@
+.wrapper{
+    height:800px;
+    background:rgb(215, 219, 240);
+    /* background:url('images/bodybuilding/adminbg.jpg') */
+}
+.header{
+    padding-top:20px;
+    background:rgb(0, 0, 63);
+}
+.header p{
+    font-family:'Lobster', cursive, 'Times New Roman';
+    font-size:34pt;
+    color:gold;
+    width:fit-content;
+    margin:auto;
+    margin-top:20px;
+}
+.wrapper>p{
+    color:black;
+    font-size:22pt;
+    font-weight:bold;
+    width:fit-content;
+    margin:auto;
+    margin-top:20px;
+}
+.adminLoginBox{
+    background:rgb(116, 125, 172);
+    border:1px solid black;
+    width:fit-content;
+    margin:auto;
+    padding:20px 40px 35px 40px;
+    border-radius:15px;
+    margin-top:20px;
+}
+.adminLoginBox p{
+    color:black;
+    font-size:13pt;
+    font-weight:bold;
+    margin-top:10px;
+}
+.adminLoginBox input{
+    display:block;
+    width:275px;
+    font-size:12pt;
+}
+input.pin{
+    width:80px;
+}
+.adminLoginBox form>.submit{
+    display:block;
+    margin:auto;
+    margin-top:30px;
+    color:rgb(215, 219, 240);
+    background:maroon;
+    border:1px solid gold;
+    width:fit-content;
+    padding:12px 40px;
+    border-radius:10px;
+}
+.adminLoginBox form>.submit:hover{
+    color:maroon;
+    background:rgb(215, 219, 240);
+    border:1px solid maroon;
+}
+.adminLoginBox form>.submit:active{
+    color:rgb(102, 0, 0);
+    background:rgb(137, 143, 170);
+    border:1px solid rgb(90, 1, 1);
+}

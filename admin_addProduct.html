@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Product</title>
+    <link rel='stylesheet' type='text/css' href='adminCSS.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='eCommerceJS.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src='adminJS.js' type='text/javascript'></script>
+</head>
+<body>
+    <div class='wrapper'>
+        <div class='top'>
+            <div class='header'>
+                    <a href='admin_login.html'>Logout</a>
+                    <p>Gotta Grow Supplements</p>
+            </div>
+            <div class='navbar'>
+                <a href='admin_orders.html'>Orders</a>
+                <a href='admin_products.html'>View Items</a>
+                <a class='current' href='admin_addProduct.html'>Add Item</a>
+            </div>
+        </div>
+
+        <div class='addProduct'>
+            <p class='successMessage'><span class='productName'>Product Name</span> successfully added to inventory.</p>
+            <p class='bold'>Add Product</p>
+            <form>
+                <span class='bold'>Product Name:</span> <input id='pName' type='text' name='productName'><br>
+                <span class='bold'>Brand: </span><input type='text' name='productBrand'><br>
+                <span class='bold'>Size: </span><input type='text' name='productSize'><br>
+                <p class='bold'>Upload Image</p><input type='file' class='productPicture' name='productPicture' accept='image/*'><br>
+                <p class='bold'>Upload Nutrition Label</p><input type='file' class='productPicture' name='productNutritionLabel' accept='image/*'><br>
+                <span class='bold'>Price: $</span><input class='price' type='text' name='productPrice'><br>
+                <span class='bold'>Category: </span><select>
+                    <option value="protein">Protein</option>
+                    <option value="preworkout">Pre-Workout</option>
+                    <option value="fatburner">Fat Burner</option>
+                    <option value="intraworkout">Intra-Workout</option>
+                </select><br>
+                
+                <table class='table'>
+                    <thead>
+                        <th>Flavor</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type='text' name='productFlavor'></td>
+                            <td><input type='number' class='thisQuantity' name='thisQuantity' min='0'></td>
+                            <td><a class='delete'>&#10005;</a></td>
+                        </tr>
+                        <tr><td><a class='addAnother'>Add Another</a></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+                <span class='bold'>Product Description:</span><textarea name='productDescription' cols='50' rows='7'></textarea>
+                <input class='submit' type='submit' value='Add Product'>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
